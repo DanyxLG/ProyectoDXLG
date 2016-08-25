@@ -13,13 +13,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DBhelper extends SQLiteOpenHelper {
 
     ////////// tabla
-    public static final String DB_NOMBRE = "CNE_DXLG";
+    public static final String DB_NOMBRE = "CNE_DXLG.db";
     public static final String TABLA_NOMBRE = "VOTANTES_DXLG";
     public static final String Col_1 = "ID";
-    public static final String Col_2 = "NOMBRE";
-    public static final String Col_3 = "APELLIDO";
-    public static final String Col_4 = "RECINTO_ELECTORAL";
-    public static final String Col_5 = "AÑO_DE_NACIMIENTO";
+    public static final String Col_2 = "CAMPO_NOMBRE_DXLG";
+    public static final String Col_3 = "CAMPO_APELLIDO_DXLG";
+    public static final String Col_4 = "CAMPO_RECINTO_ELECTORAL_DXLG";
+    public static final String Col_5 = "CAMPO_AÑO_DE_NACIMIENTO_DXLG";
 
 
     //construtor
@@ -41,7 +41,7 @@ public class DBhelper extends SQLiteOpenHelper {
 
     }
     /////////////////
-
+///////metodos CRUD
     public  boolean Insertar (String Nombre, String Apellido,String RecintoElectoral,int anoNacimiento) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();

@@ -9,119 +9,137 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.facci.proyectodxlg.MainActivityDXLG">
 
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="ID"
-        android:id="@+id/nada" />
+        android:id="@+id/scrollView"
+        android:fillViewport="false">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtID"
-        android:layout_below="@+id/nada"
-        android:layout_alignParentStart="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="NOMBRE"
-        android:id="@+id/nad"
-        android:layout_below="@+id/txtID"
-        android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ID"
+                android:id="@+id/nada"
+                android:textColor="#620000" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtNombre"
-        android:layout_below="@+id/nad"
-        android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtID"
+                android:layout_below="@+id/nada"
+                android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="APELLIDO"
-        android:id="@+id/textView"
-        android:layout_below="@+id/txtNombre"
-        android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="NOMBRE"
+                android:id="@+id/nad"
+                android:layout_below="@+id/txtID"
+                android:layout_alignParentStart="true"
+                android:background="#ffffff"
+                android:textColor="#730000" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtApellido"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtNombre"
+                android:layout_below="@+id/nad"
+                android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="RECINTO ELECTORAL"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/txtApellido"
-        android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="APELLIDO"
+                android:id="@+id/textView"
+                android:layout_below="@+id/txtNombre"
+                android:layout_alignParentStart="true"
+                android:textColor="#620000" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtRecintoElectoral"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtApellido"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="AÑO DE NACIMIENTO"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/txtRecintoElectoral"
-        android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="RECINTO ELECTORAL"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/txtApellido"
+                android:layout_alignParentStart="true"
+                android:textColor="#620000" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtanoNacimiento"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentStart="true" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtRecintoElectoral"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentStart="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="INGRESAR"
-        android:id="@+id/btnIngresar"
-        android:onClick="InsetarBtn"
-        android:layout_below="@+id/txtanoNacimiento"
-        android:layout_toEndOf="@+id/nad" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="AÑO DE NACIMIENTO"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/txtRecintoElectoral"
+                android:layout_alignParentStart="true"
+                android:textColor="#620000" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MODIFICAR"
-        android:id="@+id/btnModificar"
-        android:onClick="Modificar"
-        android:layout_below="@+id/txtanoNacimiento"
-        android:layout_toEndOf="@+id/textView3" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtanoNacimiento"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentStart="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ELIMINAR"
-        android:id="@+id/btnEliminar"
-        android:onClick="Eliminar"
-        android:layout_alignBottom="@+id/btnBuscar"
-        android:layout_alignStart="@+id/btnIngresar" />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="INGRESAR"
+                android:id="@+id/btnIngresar"
+                android:onClick="InsetarBtn"
+                android:layout_below="@+id/txtanoNacimiento"
+                android:layout_toEndOf="@+id/nada" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="BUSCAR TODOS"
-        android:onClick="VerTodos"
-        android:id="@+id/btnBuscar"
-        android:layout_below="@+id/btnModificar"
-        android:layout_alignStart="@+id/btnModificar"
-        android:layout_alignEnd="@+id/btnModificar" />
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="MODIFICAR"
+                android:id="@+id/btnModificar"
+                android:onClick="Modificar"
+                android:layout_below="@+id/txtanoNacimiento"
+                android:layout_toEndOf="@+id/btnIngresar" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="ELIMINAR"
+                android:id="@+id/btnEliminar"
+                android:onClick="Eliminar"
+                android:layout_alignBottom="@+id/btnBuscar"
+                android:layout_alignStart="@+id/btnIngresar" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="BUSCAR TODOS"
+                android:onClick="VerTodos"
+                android:id="@+id/btnBuscar"
+                android:layout_below="@+id/btnModificar"
+                android:layout_alignStart="@+id/btnModificar"
+                android:layout_alignEnd="@+id/btnModificar" />
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
